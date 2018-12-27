@@ -10,9 +10,9 @@ import (
 )
 
 func main() {
-	funcPtr := flag.String("f", "pwd1", "pwd1: easy password\npwd2: normal password\npwd3: hard password\nmorse")
+	funcPtr := flag.String("f", "pwd1", "pwd1: easy password\npwd2: normal password\npwd3: hard password\nmorse: 摩斯电码")
 	dataPtr := flag.String("s", "", "data be morse encode")
-	pwdLenPtr := flag.Int("len", 8, "default is 8, max is 62")
+	pwdLenPtr := flag.Int("len", 8, "default is 8, max is decided by pwd complex level")
 	flag.Parse()
 	switch *funcPtr {
 	case "pwd1":
