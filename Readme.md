@@ -2,7 +2,7 @@
 * 生成密码，3级复杂度，长度定制
 * 摩斯密码转换
 
-####Usage
+#### Usage
 ```
 Usage of ./small_tool:
   -f string
