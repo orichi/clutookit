@@ -34,9 +34,12 @@ func main() {
 		{
 			if *dataPtr == ""{
 				fmt.Printf("%v\n", *morse_code.MorseTable())
+				fmt.Printf("%v\n", *morse_code.ReverseMorseTable())
 			}else{
 				result := morse_code.Encoder(*dataPtr)
 				showResult(result)
+				result2 := morse_code.Decoder(result.Data())
+				showResult(result2)
 			}
 		}
 	}

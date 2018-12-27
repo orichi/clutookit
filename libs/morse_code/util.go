@@ -76,6 +76,9 @@ var morseToAlphaNum map[string]string
 func MorseTable() *map[string]string{
 	return &alphaNumToMorse
 }
+func ReverseMorseTable() *map[string]string{
+	return &morseToAlphaNum
+}
 
 func init() {
 	morseToAlphaNum = map[string]string{}
